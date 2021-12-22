@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://mp.weixin.qq.com/s/QVF6upVMSbgvZy8lHZS3CQ" target="_blank">
+<a href="https://programmercarl.com/other/kstar.html" target="_blank">
   <img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20210924105952.png" width="1000"/>
 </a>
 <p align="center"><strong><a href="https://mp.weixin.qq.com/s/tqCxrMEU-ajQumL1i8im9A">参与本项目</a>，贡献其他语言版本的代码，拥抱开源，让更多学习算法的小伙伴们收益！</strong></p>
@@ -134,7 +134,8 @@ public static String replaceSpace(StringBuffer str) {
 		//使用 sb 逐个复制 str ，碰到空格则替换，否则直接复制
         for (int i = 0; i < str.length(); i++) {
 		//str.charAt(i) 为 char 类型，为了比较需要将其转为和 " " 相同的字符串类型
-            if (" ".equals(String.valueOf(str.charAt(i)))){
+        //if (" ".equals(String.valueOf(str.charAt(i)))){
+            if (s.charAt(i) == ' ') {
                 sb.append("%20");
             } else {
                 sb.append(str.charAt(i));
